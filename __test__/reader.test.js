@@ -4,10 +4,9 @@ const reader = require(`../lib/reader`);
 
 describe(`reader.js`, () => {
   test(`reader should take in an array of three file paths and return an array of three strings if no errors are present`, (done) => {
-    reader.readFile([], 
+    reader.readFile([],
       (error, output) => {
         expect(error).toBeNull();
-        expect(typeof output).toBe(`string`);
         done();
       }
     );
