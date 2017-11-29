@@ -1,0 +1,9 @@
+'use strict';
+
+const reader = require(`../lib/reader`);
+
+describe(`reader.js`, () => {
+  test(`reader should take in an array of three file paths and return an array of three strings if no errors are present`, () => {
+    
+  })
+});
