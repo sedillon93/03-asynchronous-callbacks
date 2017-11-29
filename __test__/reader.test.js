@@ -10,9 +10,3 @@ describe(`reader.js`, () => {
     });
   });
 });
-
-// describe(`this file`, () => {
-//   test(`some function does what I think`, () => {
-//     expect(object.method(inputs)).toBe(expected output);
-//   })
-// })
