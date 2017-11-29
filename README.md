@@ -15,7 +15,7 @@
 Configure the root of your repository with the following files and directories. Thoughtfully name and organize any aditional configuration or module files.
 * **README.md** - contains documentation
 * **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file 
-* **.eslintrc** - contains the course linter configuration
+* **.eslintrc.json** - contains the course linter configuration
 * **.eslintignore** - contains the course linter ignore configuration
 * **package.json** - contains npm package config
   * create a `lint` script for running eslint
@@ -34,7 +34,7 @@ In the lib/ directory create a reader.js module that exports a single function. 
 
 ## Testing  
 #### Reader Module Tests
-* Use TDD `describe` and `test` methods to define descriptive tests and increase
+* Use TDD `describe` and `test` methods to define descriptive tests
 * Each `test` callback should aim to test a small well defined feature of a function
 * Write tests to ensure the reader function rejects errors with invalid file paths
 * Write tests to ensure the reader function correctly resolves mapped string data for an array of file paths
