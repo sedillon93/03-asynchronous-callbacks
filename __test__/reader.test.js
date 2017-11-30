@@ -7,6 +7,7 @@ describe(`reader.js`, () => {
     reader.readFile([],
       (error, output) => {
         expect(error).toBeNull();
+        expect(typeof output).toBe(`object`);
         done();
       }
     );
