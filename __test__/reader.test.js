@@ -7,7 +7,7 @@ const paths = [`${__dirname}/../assets/cupcakes.txt`, `${__dirname}/../assets/ke
 describe(`reader.js`, () => {
   test(`reader.readFile should take in an array of three file paths`, () => {
     reader.readFile(paths, (error, output) => {
-      expect(Array.isArray(paths)).toBeTruthy();
+      expect(Array.isArray(paths)).toBeTruthy(); //make sure `paths` is an array
       expect(paths[0]).toContain(`.txt`); //make sure the first file path contains .txt extension
       expect(paths[1]).toContain(`.txt`); //make sure the second file path contains .txt extension
       expect(paths[2]).toContain(`.txt`); //make sure the third file path contains .txt extension
