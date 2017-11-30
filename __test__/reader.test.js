@@ -3,6 +3,7 @@
 const reader = require(`../lib/reader`);
 
 const paths = [`${__dirname}/../assets/cupcakes.txt`, `${__dirname}/../assets/keep_calm.txt`, `${__dirname}/../assets/pirate.txt`];
+let wrongPaths = [`this is wrong`, `so is this`];
 
 describe(`reader.js`, () => {
   test(`reader.readFile should take in an array of three file paths`, () => {
@@ -13,6 +14,12 @@ describe(`reader.js`, () => {
       expect(paths[2]).toContain(`.txt`); //make sure the third file path contains .txt extension
     })
   })
+  // test(`reader.readFile should throw an error if the file provided is not a txt file`, () => {
+  //   reader.readFile(wrongPaths, (error, output) => {
+  //     console.log(wrongPaths[0]);
+  //     expect(wrongPaths[0]).toThrow();
+  //   })
+  // })
   test(`reader.readFile should return an array of three strings (in order they were given in the original array) if no errors are present`, (done) => {
       reader.readFile(paths, (error, output) => {
         expect(error).toBeNull(); //check there are no errors
